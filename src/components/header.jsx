@@ -42,7 +42,7 @@ export default function Header() {
             <span className="sr-only">Your Company</span>
             <img
               alt=""
-              src=""
+              src="src/assets/logo-removebg-preview.png"
               className="h-8 w-auto"
             />
           </a>
@@ -172,6 +172,35 @@ export default function Header() {
                 <Popover className="relative">
       <PopoverButton className="inline-flex items-center gap-x-1 text-sm/6 mt-1 font-semibold text-white">
         <span>Showroom</span>
+        <ChevronDownIcon aria-hidden="true" className="h-5 w-5" />
+      </PopoverButton>
+
+      <PopoverPanel
+        transition
+        className="absolute left-1/2 z-10 mt-1 flex w-max  -translate-x-1/2 px-3     transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+        <div className="w-max max-w-md flex-auto overflow-hidden rounded-1xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
+          <div className="p-1">
+            {solutions.map((item) => (
+              <div key={item.name} className="group relative flex gap-x-2 rounded-lg p-4 hover:bg-gray-50">
+                
+                <div>
+                  <a href={item.href} className="font-semibold text-gray-900">
+                    {item.name}
+                    <span className="absolute inset-0" />
+                  </a>
+                  
+                </div>
+              </div>
+            ))}
+          </div>
+          
+        </div>
+      </PopoverPanel>
+    </Popover>
+    <Popover className="relative">
+      <PopoverButton className="inline-flex items-center gap-x-1 text-sm/6 mt-1 font-semibold text-white">
+        <span>Services</span>
         <ChevronDownIcon aria-hidden="true" className="h-5 w-5" />
       </PopoverButton>
 
