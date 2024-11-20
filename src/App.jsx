@@ -2,6 +2,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Banner from "./components/Banner";
 import Collection from "./components/Collection";
+import Card from "./components/Card";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
     <Header/>
     <Banner/>
     <Collection/>
+    <Card/>
     <Footer/>
    </>
    

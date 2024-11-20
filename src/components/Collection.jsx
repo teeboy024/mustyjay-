@@ -6,7 +6,7 @@ import pics5 from "../assets/2019-toyota-coaster.jpg"
 import pics6 from "../assets/Corolla-Altis.jpg"
 import pics7 from "../assets/Fortuner.jpg"
 import pics8 from "../assets/download (1).jpeg"
-import pics9 from "../assets/download (3).jpeg"
+import pics9 from "../assets/download__3_-removebg-preview (1).png"
 import pics10 from "../assets/123-1232251_hyundai-sonata-hyundai-car-images-png-transparent-png-removebg-preview.png"
 
 
