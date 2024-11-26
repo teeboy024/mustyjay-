@@ -15,8 +15,8 @@ export default function Collection() {
     
     <div class="max-w-7xl max-sm:max-w-md mx-auto p-4 font-[sans-serif]">
       <div class="max-w-5xl mx-auto text-center mt-7">
-        <h4 class="text-4xl font-bold mb-6 text-black">Luxury Car Dealers in Nigeria</h4>
-        <p class="text-base text-gray-300">Experience Full Range Of Luxury On Wheels.</p>
+        <h4 class="text-4xl font-bold mb-3 " style={{color: "#4F46E5"}}>Luxury Car Dealers in Nigeria</h4>
+        <p class="text-base text-gray-400">Experience Full Range Of Luxury On Wheels.</p>
       </div>
       <div class="grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-2 gap-2 mt-5 sm:grid-cols  ">
       <label for="radio4" class=" py-8 px-4 relative">
@@ -64,7 +64,7 @@ export default function Collection() {
 
       </div>
 
-     
-    </div>
+</div>
+
   )
 }

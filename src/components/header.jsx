@@ -2,24 +2,16 @@ import { useState } from 'react'
 import {
   Dialog,
   DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
   Popover,
   PopoverButton,
   PopoverGroup,
   PopoverPanel,
 } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon} from '@heroicons/react/20/solid'
 const solutions = [
     { name: 'Cars For Sale',  href: '#', },
     { name: 'Spare Parts For Sale',  href: '#',}
@@ -35,10 +27,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gray-400">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+    <header className="bg-gray-400" style={{backgroundColor: "#4F46E5"}}>
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" >
+        <div className="lg:flex-1">
+          <a href="#" className="">
             <span className="sr-only">Your Company</span>
             <img
               alt=""
@@ -46,6 +38,7 @@ export default function Header() {
               className="h-8 w-auto"
             />
           </a>
+          <h1 className='text-white text-base'><b>MUSTY JAY AUTOS</b></h1>
         </div>
         <div className="flex lg:hidden">
           <button
